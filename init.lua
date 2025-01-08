@@ -5,6 +5,7 @@ require("config.lsp-config")
 require("config.bufferline")
 require("config.treesitter")
 require("config.setup")
+require("config.lualine")
 
 
 
