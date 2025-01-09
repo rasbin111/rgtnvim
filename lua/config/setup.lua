@@ -1,9 +1,9 @@
--- Open directories in the same tab
-vim.g.netrw_browse_split = 0
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
--- Optional: Additional netrw settings
-vim.g.netrw_banner = 0         -- Disable the banner
-vim.g.netrw_liststyle = 3      -- Use tree-style listing
-vim.g.netrw_altv = 1          -- Open splits to the right
-vim.g.netrw_winsize = 25       -- Set window size to 25% of the screen
+-- optionally enable 24-bit colour
+vim.opt.termguicolors = true
 
+-- OR setup with some options
+require("neo-tree").setup()
