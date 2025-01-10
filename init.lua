@@ -8,4 +8,3 @@ require("config.setup")
 require("config.lualine")
 
 
-
