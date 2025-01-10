@@ -6,5 +6,6 @@ require("config.bufferline")
 require("config.treesitter")
 require("config.setup")
 require("config.lualine")
+require("config.neo-tree")
 
 
