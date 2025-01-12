@@ -15,3 +15,22 @@ vim.opt.number = true
 
 -- Enable relatve line numbers
 vim.opt.relativenumber = true
+
+-- Enable search highlighting
+vim.o.hlsearch = true
+
+-- Reduce delay for CursorHold
+vim.o.updatetime = 300
+
+-- Create autocommand group and add CursorHold event
+vim.api.nvim_create_augroup("HighlightWord", { clear = true })
+vim.api.nvim_create_autocmd("CursorHold", {
+    group = "HighlightWord",
+    callback = function()
+        local word = vim.fn.expand("<cword>")
+        if word ~= "" then
+            vim.fn.setreg("/", "\\<" .. word .. "\\>")
+        end
+    end,
+})
+
