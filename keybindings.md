@@ -16,6 +16,5 @@ Type i or a in normal mode to return to terminal insert mode.
 <leader> e -> Toggle neotree
 
 # highlighting 
- /<any word> <CR> 
- and it will start highlighting every word we go to
+press "n" when in normal mode and it will start highlighting every word we go to
  :noh -> to stop highlighting
