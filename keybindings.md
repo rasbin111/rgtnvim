@@ -18,3 +18,7 @@ Type i or a in normal mode to return to terminal insert mode.
 # highlighting 
 press "n" when in normal mode and it will start highlighting every word we go to
  :noh -> to stop highlighting
+
+# copy pasting outside neovim
+select and "+y -> copy selection to system clipboard 
+"+yy -> copy current line to system clipboard
