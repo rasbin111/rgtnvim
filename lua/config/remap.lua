@@ -21,3 +21,6 @@ vim.keymap.set("n", "<Leader>tv", ":ToggleTerm direction=vertical<CR>", { norema
 -- Floating terminal
 vim.keymap.set("n", "<Leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
 
+-- esc to go to normal mode when using terminal
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {noremap=true, silent=true})
+
