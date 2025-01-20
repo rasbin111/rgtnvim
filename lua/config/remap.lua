@@ -24,3 +24,5 @@ vim.keymap.set("n", "<Leader>tf", ":ToggleTerm direction=float<CR>", { noremap =
 -- esc to go to normal mode when using terminal
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {noremap=true, silent=true})
 
+vim.keymap.set("n","<M-k>", "<Cmd>lua require('dapui').eval()<CR>")
+ 
