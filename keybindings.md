@@ -22,3 +22,7 @@ press "n" when in normal mode and it will start highlighting every word we go to
 # copy pasting outside neovim
 select and "+y -> copy selection to system clipboard 
 "+yy -> copy current line to system clipboard
+
+# undo redo 
+undo -> u
+redo -> ctrl + r
