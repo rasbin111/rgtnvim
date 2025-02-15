@@ -5,6 +5,11 @@ vim.g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
+-- Set background transparency
+vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "NonText", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE", ctermbg = "NONE" }) -- Non-current windows
+
 -- Set tab size
 vim.opt.tabstop = 4         -- Number of spaces a tab counts for
 vim.opt.shiftwidth = 4      -- Number of spaces for each indentation level
@@ -18,6 +23,7 @@ vim.opt.relativenumber = true
 
 -- Enable search highlighting
 vim.o.hlsearch = true
+
 
 -- Reduce delay for CursorHold
 vim.o.updatetime = 300
