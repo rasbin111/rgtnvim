@@ -2,15 +2,33 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.cmd("colorscheme catppuccin")
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
+vim.cmd("colorscheme catppuccin")
+
 -- Set background transparency
+-- Set transparency for Neovim UI elements
 vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "NonText", { bg = "NONE", ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE", ctermbg = "NONE" }) -- Non-current windows
+vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "VertSplit", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", ctermbg = "NONE" })
+
+-- Set transparency for Neo-Tree
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE", ctermbg = "NONE" })
+
+-- Set transparency for terminal
+vim.api.nvim_set_hl(0, "Terminal", { bg = "NONE", ctermbg = "NONE" })
+
+-- Optional: Transparency for floating windows and popups
+vim.api.nvim_set_hl(0, "FloatNormal", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "NONE", ctermbg = "NONE" })
+
 
 -- Set tab size
 vim.opt.tabstop = 4         -- Number of spaces a tab counts for
