@@ -8,6 +8,7 @@ vim.opt.termguicolors = true
 
 vim.cmd("colorscheme nordic")
 
+vim.api.nvim_set_hl(0, 'Comment', { fg = '#7f9f7f' }) -- change comment color
 -- Set background transparency
 -- -- Set transparency for Neovim UI elements
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
