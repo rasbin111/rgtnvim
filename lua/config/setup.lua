@@ -6,7 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
-vim.cmd("colorscheme catppuccin")
+vim.cmd("colorscheme nordic")
 
 -- Set background transparency
 -- -- Set transparency for Neovim UI elements
