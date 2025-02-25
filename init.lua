@@ -9,4 +9,3 @@ require("config.lualine")
 require("config.neo-tree")
 require("config.nvim-dap")
 
-
