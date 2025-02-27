@@ -8,6 +8,7 @@ Use <Ctrl-\><Ctrl-n> to exit terminal insert mode and return to normal mode.
 Type i or a in normal mode to return to terminal insert mode.
 
 # buffers
+<leader> b -> buffers
 :bp -> previous buffer
 :bn -> next buffer
 :bd -> delte buffer
@@ -26,3 +27,7 @@ select and "+y -> copy selection to system clipboard
 # undo redo 
 undo -> u
 redo -> ctrl + r
+
+# toggle breakpoint
+<leader> o -> Toggle breakpoint 
+<leader> B -> Breakpoint with condition 
