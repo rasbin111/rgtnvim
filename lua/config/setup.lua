@@ -61,11 +61,3 @@ vim.api.nvim_create_autocmd("CursorHold", {
     end,
 })
 
--- While typing, Neovim will keep your cursor in place with 10 lines of padding below
-vim.api.nvim_create_autocmd("TextChangedI", {
-  pattern = "*",
-  callback = function()
-    vim.cmd("normal! zz")
-  end,
-})
-
