@@ -6,6 +6,6 @@ if vim.g.neovide then
 
     vim.g.neovide_fullscreen = true -- Start Neovide in fullscreen mode
 
-    -- vim.g.neovide_font_features = { "calt", "liga" }
-    -- vim.g.neovide_cursor_vfx_mode = "railgun"  -- Other modes: torpedo, pixiedust, sonicboom
+    vim.g.neovide_font_features = { "calt", "liga" }
+    vim.g.neovide_cursor_vfx_mode = "railgun"  -- Other modes: torpedo, pixiedust, sonicboom
 end
