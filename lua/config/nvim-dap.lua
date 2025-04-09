@@ -2,7 +2,9 @@ local dap = require('dap')
 
 dap.adapters.python = {
     type = 'executable',
-    command = vim.fn.stdpath('data') .. '/mason/packages/debugpy/venv/bin/python',
+    -- command = vim.fn.stdpath('data') .. '/mason/packages/debugpy/venv/bin/python',
+    command = vim.fn.getcwd() .. '/.venv/bin/python', -- Use your venv's Python
+
     args = { '-m', 'debugpy.adapter' },
 }
 
@@ -17,6 +19,15 @@ dap.configurations.python = {
         end,
     },
 }
+
+-- Django 
+table.insert(dap.configurations.python, {
+  type = 'python',
+  request = 'launch',
+  name = 'Django',
+  program = vim.fn.getcwd() .. '/manage.py',  -- Adjust path if needed
+  args = {'runserver'},
+})
 
 
 vim.keymap.set('n', '<F5>', function() require('dap').continue() end)
