@@ -9,4 +9,4 @@ require("config.lualine")
 require("config.neo-tree")
 require("config.nvim-dap")
 require("config.neovide-config")
-
+require("config.telescope")
