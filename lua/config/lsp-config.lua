@@ -15,6 +15,15 @@ lsp_zero.on_attach(function(client, bufnr)
                 vim.lsp.buf.format({ async = false, timeout_ms = 10000 })
             end,
         })
+        vim.api.nvim_create_autocmd("BufWritePre", {
+            pattern = { "*.js", "*.ts", "*.tsx", "*.tsx", "*.html", "*.css", "*.scss", "*.sass" },
+            callback = function()
+                vim.opt.shiftwidth = 2
+                vim.opt.tabstop = 2
+                vim.opt.softtabstop = 2
+                vim.opt.expandtab = true
+            end
+        })
     end
 
     -- LSP Keybindings
